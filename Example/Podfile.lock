@@ -1,0 +1,16 @@
+PODS:
+  - CSModule_Goods (0.1.0)
+
+DEPENDENCIES:
+  - CSModule_Goods (from `../`)
+
+EXTERNAL SOURCES:
+  CSModule_Goods:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CSModule_Goods: 34e481a6abca7daf86554d405eb3672b57a0444a
+
+PODFILE CHECKSUM: 0821910e7e583a2dc44ca7517f182253d236feb4
+
+COCOAPODS: 1.10.0.rc.1
