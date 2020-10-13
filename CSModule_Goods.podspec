@@ -29,15 +29,17 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.prefix_header_file = 'CSModule_Goods/Classes/CSModule_Goods-Prefix.pch'
 
   s.source_files = 'CSModule_Goods/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CSModule_Goods' => ['CSModule_Goods/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'CSModule_Goods' => ['CSModule_Goods/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'CSModule'
+  s.dependency 'Masonry'
 end
