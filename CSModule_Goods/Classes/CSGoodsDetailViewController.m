@@ -86,8 +86,10 @@
 - (void)cartButtonClicked:(UIButton *)button {
     // 调用"购物车组件"获取购物车详情页
     id<CSCartProtocol> cartApi = [CSModuleManager instanceForProtocol:@protocol(CSCartProtocol)];
-    UIViewController *cartVC = [cartApi createCartViewController];
-    [self.navigationController pushViewController:cartVC animated:YES];
+    if (cartApi) {
+        UIViewController *cartVC = [cartApi createCartViewController];
+        [self.navigationController pushViewController:cartVC animated:YES];
+    }
 }
 
 #pragma mark - UITableViewDataSource
